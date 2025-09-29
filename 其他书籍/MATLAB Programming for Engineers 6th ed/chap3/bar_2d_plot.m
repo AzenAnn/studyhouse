@@ -1,0 +1,11 @@
+x = 1:5;
+y = zeros(5,3);
+y(1,:) = [1 2 3];
+y(2,:) = [2 3 4];
+y(3,:) = [3 4 5];
+y(4,:) = [4 5 4];
+y(5,:) = [5 4 3];
+bar(x,y);
+title('\bfExample of a 2D Bar Plot');
+xlabel('\bf\itx');
+ylabel('\bf\ity');

@@ -1,0 +1,10 @@
+xt = @(t) exp(-0.2*t) .* cos(2*t);
+yt = @(t) exp(-0.2*t) .* sin(2*t);
+zt = @(t) t;
+fplot3(xt,yt,zt,[0 10],'LineWidth',2);
+title('\bfThree-Dimensional Line Plot');
+xlabel('\bfx');
+ylabel('\bfy');
+zlabel('\bftime');
+grid on;
+

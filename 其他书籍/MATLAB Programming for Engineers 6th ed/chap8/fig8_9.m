@@ -1,0 +1,10 @@
+figure(1);
+t = 0:0.1:10;
+funx = @ (t) exp(-0.2*t) .* cos(2*t);
+funy = @ (t) exp(-0.2*t) .* sin(2*t);
+funz = @ (t) t;
+fplot3(funx, funy, funz, [0 10],'LineWidth',2);
+title('\bfThree-Dimensional Line Plot');
+xlabel('\bfx');
+ylabel('\bfy');
+grid on;
